@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campus Sports Meet 2026</h1>
+        <p>Sports Events Registration</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sports.html">Sports Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <section class="container">
+
+        <h2>Sports Events</h2>
+
+        <!-- SPORTS IMAGES -->
+
+        <div class="sports-gallery">
+
+            <div class="sport-card">
+                <img src="images/sports-event-images/football.jpg" alt="Football">
+                <h3>Football</h3>
+            </div>
+
+            <div class="sport-card">
+                <img src="images/sports-event-images/basketball.jpg" alt="Basketball">
+                <h3>Basketball</h3>
+            </div>
+
+            <div class="sport-card">
+                <img src="images/sports-event-images/chess.jpg" alt="Chess">
+                <h3>Chess</h3>
+            </div>
+
+            <div class="sport-card">
+                <img src="images/sports-event-images/badminton.jpg" alt="Badminton">
+                <h3>Badminton</h3>
+            </div>
+
+            <div class="sport-card">
+                <img src="images/sports-event-images/volleyball.jpg" alt="Volleyball">
+                <h3>Volleyball</h3>
+            </div>
+
+        </div>
+
+        <!-- EVENTS TABLE -->
+
+        <table>
+
+            <tr>
+                <th>Event ID</th>
+                <th>Event Name</th>
+                <th>Category</th>
+                <th>Date & Time</th>
+                <th>Venue</th>
+                <th>Fee</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>E101</td>
+                <td>Football</td>
+                <td>Team</td>
+                <td>20 May 2026</td>
+                <td>Main Ground</td>
+                <td>200</td>
+                <td>Open</td>
+            </tr>
+
+            <tr>
+                <td>E102</td>
+                <td>Basketball</td>
+                <td>Team</td>
+                <td>21 May 2026</td>
+                <td>Court A</td>
+                <td>150</td>
+                <td>Open</td>
+            </tr>
+
+            <tr>
+                <td>E103</td>
+                <td>Chess</td>
+                <td>Individual</td>
+                <td>22 May 2026</td>
+                <td>Hall 1</td>
+                <td>50</td>
+                <td>Closed</td>
+            </tr>
+
+            <tr>
+                <td>E104</td>
+                <td>Badminton</td>
+                <td>Individual</td>
+                <td>23 May 2026</td>
+                <td>Indoor Stadium</td>
+                <td>100</td>
+                <td>Open</td>
+            </tr>
+
+            <tr>
+                <td>E105</td>
+                <td>Volleyball</td>
+                <td>Team</td>
+                <td>24 May 2026</td>
+                <td>180</td>
+                <td>Ground B</td>
+                <td>Open</td>
+            </tr>
+
+        </table>
+
+        <!-- FORM -->
+
+        <h2>Student Participation Form</h2>
+
+        <form id="sportsForm">
+
+            <input type="text" id="name" placeholder="Student Name">
+
+            <input type="text" id="regno" placeholder="Register Number">
+
+            <input type="email" id="email" placeholder="Email ID">
+
+            <input type="text" id="mobile" placeholder="Mobile Number">
+
+            <input type="text" id="department" placeholder="Department">
+
+            <input type="number" id="year" placeholder="Year of Study" min="1" max="4">
+
+            <select id="event">
+
+                <option value="">Select Event</option>
+
+                <option value="Football">Football</option>
+
+                <option value="Basketball">Basketball</option>
+
+                <option value="Chess">Chess</option>
+
+                <option value="Badminton">Badminton</option>
+
+                <option value="Volleyball">Volleyball</option>
+
+            </select>
+
+            <select id="ptype">
+
+                <option value="">Participation Type</option>
+
+                <option value="Individual">Individual</option>
+
+                <option value="Team">Team</option>
+
+            </select>
+
+            <input type="text" id="teamname" placeholder="Team Name">
+
+            <input type="number" id="members" placeholder="Number of Team Members">
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <div id="message"></div>
+
+        <h3>Total Participants: <span id="count">0</span></h3>
+
+        <div id="participantList"></div>
+
+    </section>
+
+    <footer>
+        <p>Department of AI & DS</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

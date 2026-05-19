@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Campus Sports Meet 2026</h1>
+        <p>Feedback Form</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sports.html">Sports Events</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <section class="container">
+
+        <h2>Feedback Form</h2>
+
+        <form id="feedbackForm">
+
+            <input type="text" id="fname" placeholder="Student Name">
+
+            <input type="text" id="fregno" placeholder="Register Number">
+
+            <select id="fevent">
+
+                <option value="">Select Event</option>
+
+                <option>Football</option>
+                <option>Basketball</option>
+                <option>Chess</option>
+                <option>Badminton</option>
+                <option>Volleyball</option>
+
+            </select>
+
+            <select id="rating">
+
+                <option value="">Select Rating</option>
+
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+
+            </select>
+
+            <textarea id="comments" placeholder="Enter Comments"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+        <div id="feedbackMessage"></div>
+
+        <div id="feedbackSummary"></div>
+
+        <h3>Average Rating: <span id="averageRating">0</span></h3>
+
+    </section>
+
+    <footer>
+        <p>Department of AI & DS</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
